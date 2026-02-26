@@ -4,7 +4,7 @@ import BlockStart from './traps/BlockStart';
 import BlockSpinner from './traps/BlockSpinner';
 import BlockLimbo from './traps/BlockLimbo';
 import BlockAxe from './traps/BlockAxe';
-import BlockEnd from './Traps/BlockEnd';
+import BlockEnd from './traps/BlockEnd';
 import Bounds from './Bounds';
 
 const Level = ({ count = 5, types = [BlockSpinner, BlockLimbo, BlockAxe], seed = 0 }) => {
