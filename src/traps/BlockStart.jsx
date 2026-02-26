@@ -1,8 +1,27 @@
+import { Float, Text } from '@react-three/drei';
+
 import { boxGeometry, floor1Material } from '../../lib/materials';
 
 const BlockStart = ({ position = [0, 0, 0] }) => {
 	return (
 		<group position={position}>
+			<Float
+				floatIntensity={0.25}
+				rotationIntensity={0.25}
+			>
+				<Text
+					scale={0.5}
+					font='/bebas-neue-v9-latin-regular.woff'
+					maxWidth={0.25}
+					lineHeight={0.75}
+					textAlign='right'
+					position={[0.75, 0.65, 0]}
+					rotation-y={-0.25}
+				>
+					Marble Race
+					<meshBasicMaterial toneMapped={false} />
+				</Text>
+			</Float>
 			<mesh
 				geometry={boxGeometry}
 				material={floor1Material}

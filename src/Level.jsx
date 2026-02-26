@@ -7,7 +7,7 @@ import BlockAxe from './traps/BlockAxe';
 import BlockEnd from './Traps/BlockEnd';
 import Bounds from './Bounds';
 
-const Level = ({ count = 5, types = [BlockSpinner, BlockLimbo, BlockAxe] }) => {
+const Level = ({ count = 5, types = [BlockSpinner, BlockLimbo, BlockAxe], seed = 0 }) => {
 	const blocks = useMemo(() => {
 		const blocks = [];
 
@@ -17,7 +17,7 @@ const Level = ({ count = 5, types = [BlockSpinner, BlockLimbo, BlockAxe] }) => {
 		}
 
 		return blocks;
-	}, [count, types]);
+	}, [count, types, seed]);
 
 	return (
 		<>
